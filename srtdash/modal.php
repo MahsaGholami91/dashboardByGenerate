@@ -1,10 +1,12 @@
+<?php include "functions.php" ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Button - srtdash</title>
+    <title>Modal - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -74,22 +76,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="alert.html">Alert</a></li>
+                                    <li><a href="accordion.php">Accordion</a></li>
+                                    <li><a href="alert.php">Alert</a></li>
                                     <li><a href="badge.html">Badge</a></li>
-                                    <li class="active"><a href="button.html">Button</a></li>
+                                    <li><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li><a href="cards.html">Cards</a></li>
+                                    <li><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
-                                    <li><a href="media-object.html">Media Object</a></li>
-                                    <li><a href="modal.html">Modal</a></li>
-                                    <li><a href="pagination.html">Pagination</a></li>
+                                    <li><a href="media-object.php">Media Object</a></li>
+                                    <li class="active"><a href="modal.php">Modal</a></li>
+                                    <li><a href="pagination.php">Pagination</a></li>
                                     <li><a href="popovers.html">Popover</a></li>
                                     <li><a href="progressbar.html">Progressbar</a></li>
                                     <li><a href="tab.html">Tab</a></li>
                                     <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
                             </li>
@@ -335,7 +337,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>button</span></li>
+                                <li><span>Modal</span></li>
                             </ul>
                         </div>
                     </div>
@@ -354,223 +356,10 @@
             </div>
             <!-- page title area end -->
             <div class="main-content-inner">
-                <!-- button srea start -->
                 <div class="row">
-                    <!-- General button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">General Buttons</h4>
-                                <button type="button" class="btn btn-primary mb-3">Primary</button>
-                                <button type="button" class="btn btn-success mb-3">Success</button>
-                                <button type="button" class="btn btn-danger mb-3">Danger</button>
-                                <button type="button" class="btn btn-warning mb-3">Warning</button>
-                                <button type="button" class="btn btn-info mb-3">Info</button>
-                                <button type="button" class="btn btn-dark mb-3">Light</button>
-                                <button type="button" class="btn btn-secondary mb-3">Light</button>
-                                <button type="button" class="btn btn-light mb-3">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Falt button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Falt Buttons</h4>
-                                <button type="button" class="btn btn-flat btn-primary mb-3">Primary</button>
-                                <button type="button" class="btn btn-flat btn-success mb-3">Success</button>
-                                <button type="button" class="btn btn-flat btn-danger mb-3">Danger</button>
-                                <button type="button" class="btn btn-flat btn-warning mb-3">Warning</button>
-                                <button type="button" class="btn btn-flat btn-info mb-3">Info</button>
-                                <button type="button" class="btn btn-flat btn-dark mb-3">Light</button>
-                                <button type="button" class="btn btn-flat btn-secondary mb-3">Light</button>
-                                <button type="button" class="btn btn-flat btn-light mb-3">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- rounded button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">rounded Buttons</h4>
-                                <button type="button" class="btn btn-rounded btn-primary mb-3">Primary</button>
-                                <button type="button" class="btn btn-rounded btn-success mb-3">Success</button>
-                                <button type="button" class="btn btn-rounded btn-danger mb-3">Danger</button>
-                                <button type="button" class="btn btn-rounded btn-warning mb-3">Warning</button>
-                                <button type="button" class="btn btn-rounded btn-info mb-3">Info</button>
-                                <button type="button" class="btn btn-rounded btn-dark mb-3">Light</button>
-                                <button type="button" class="btn btn-rounded btn-"> mb-3Light</button>
-                                <button type="button" class="btn btn-rounded btn-light mb-3">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tags button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Button tags</h4>
-                                <a class="btn btn-primary mb-3" href="#" role="button">Link</a>
-                                <button class="btn btn-success mb-3" type="submit">Button</button>
-                                <input class="btn btn-warning mb-3" type="button" value="Input">
-                                <input class="btn btn-info mb-3" type="submit" value="Submit">
-                                <input class="btn btn-danger mb-3" type="reset" value="Reset">
-                                <input class="btn btn-dark mb-3" type="reset" value="Reset">
-                                <input class="btn btn-secondary mb-3" type="reset" value="Reset">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tags Flat button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Button tags Flat</h4>
-                                <a class="btn btn-flat btn-primary mb-3" href="#" role="button">Link</a>
-                                <button class="btn btn-flat btn-success mb-3" type="submit">Button</button>
-                                <input class="btn btn-flat btn-warning mb-3" type="button" value="Input">
-                                <input class="btn btn-flat btn-info mb-3" type="submit" value="Submit">
-                                <input class="btn btn-flat btn-danger mb-3" type="reset" value="Reset">
-                                <input class="btn btn-flat btn-dark mb-3" type="reset" value="Reset">
-                                <input class="btn btn-flat btn-secondary mb-3" type="reset" value="Reset">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tags rounded  button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Button tags rounded </h4>
-                                <a class="btn btn-rounded btn-primary mb-3" href="#" role="button">Link</a>
-                                <button class="btn btn-rounded btn-success mb-3" type="submit">Button</button>
-                                <input class="btn btn-rounded btn-warning mb-3" type="button" value="Input">
-                                <input class="btn btn-rounded btn-info mb-3" type="submit" value="Submit">
-                                <input class="btn btn-rounded btn-danger mb-3" type="reset" value="Reset">
-                                <input class="btn btn-rounded btn-dark mb-3" type="reset" value="Reset">
-                                <input class="btn btn-rounded btn-secondary mb-3" type="reset" value="Reset">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Outline buttons -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Outline buttons</h4>
-                                <button type="button" class="btn btn-outline-primary mb-3">Primary</button>
-                                <button type="button" class="btn btn-outline-secondary mb-3">Secondary</button>
-                                <button type="button" class="btn btn-outline-success mb-3">Success</button>
-                                <button type="button" class="btn btn-outline-danger mb-3">Danger</button>
-                                <button type="button" class="btn btn-outline-warning mb-3">Warning</button>
-                                <button type="button" class="btn btn-outline-info mb-3">Info</button>
-                                <button type="button" class="btn btn-outline-dark mb-3">Dark</button>
-                                <button type="button" class="btn btn-outline-light mb-3">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Outline Flat buttons -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Outline buttons Flat</h4>
-                                <button type="button" class="btn btn-flat btn-outline-primary mb-3">Primary</button>
-                                <button type="button" class="btn btn-flat btn-outline-secondary mb-3">Secondary</button>
-                                <button type="button" class="btn btn-flat btn-outline-success mb-3">Success</button>
-                                <button type="button" class="btn btn-flat btn-outline-danger mb-3">Danger</button>
-                                <button type="button" class="btn btn-flat btn-outline-warning mb-3">Warning</button>
-                                <button type="button" class="btn btn-flat btn-outline-info mb-3">Info</button>
-                                <button type="button" class="btn btn-flat btn-outline-dark mb-3">Dark</button>
-                                <button type="button" class="btn btn-flat btn-outline-light mb-3">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sizes buttons -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Sizes buttons</h4>
-                                <button type="button" class="btn btn-info btn-xl mb-3">Large button</button>
-                                <button type="button" class="btn btn-primary btn-lg mb-3">Large button</button>
-                                <button type="button" class="btn btn-success btn-md mb-3">Small button</button>
-                                <button type="button" class="btn btn-warning btn-sm mb-3">Small button</button>
-                                <button type="button" class="btn btn-danger btn-xs mb-3">Small button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sizes buttons Flat -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Sizes buttons Flat</h4>
-                                <button type="button" class="btn btn-flat btn-info btn-xl mb-3">Large button</button>
-                                <button type="button" class="btn btn-flat btn-primary btn-lg mb-3">Large button</button>
-                                <button type="button" class="btn btn-flat btn-success btn-md mb-3">Small button</button>
-                                <button type="button" class="btn btn-flat btn-warning btn-sm mb-3">Small button</button>
-                                <button type="button" class="btn btn-flat btn-danger btn-xs mb-3">Small button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- block buttons -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">block buttons</h4>
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-warning btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-dark btn-lg btn-block">Block level button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- block buttons Flat -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">block buttons Flat</h4>
-                                <button type="button" class="btn btn-flat btn-primary btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-info btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-warning btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-secondary btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-success btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-danger btn-lg btn-block">Block level button</button>
-                                <button type="button" class="btn btn-flat btn-dark btn-lg btn-block">Block level button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Disabled  button -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">General Buttons</h4>
-                                <button type="button" class="btn btn-primary mb-3" disabled>Primary</button>
-                                <button type="button" class="btn btn-success mb-3" disabled>Success</button>
-                                <button type="button" class="btn btn-danger mb-3" disabled>Danger</button>
-                                <button type="button" class="btn btn-warning mb-3" disabled>Warning</button>
-                                <button type="button" class="btn btn-info mb-3" disabled>Info</button>
-                                <button type="button" class="btn btn-dark mb-3" disabled>Light</button>
-                                <button type="button" class="btn btn-secondary mb-3" disabled>Light</button>
-                                <button type="button" class="btn btn-light mb-3" disabled>Light</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Disabled button Falt -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Falt Buttons</h4>
-                                <button type="button" class="btn btn-flat btn-primary mb-3" disabled>Primary</button>
-                                <button type="button" class="btn btn-flat btn-success mb-3" disabled>Success</button>
-                                <button type="button" class="btn btn-flat btn-danger mb-3" disabled>Danger</button>
-                                <button type="button" class="btn btn-flat btn-warning mb-3" disabled>Warning</button>
-                                <button type="button" class="btn btn-flat btn-info mb-3" disabled>Info</button>
-                                <button type="button" class="btn btn-flat btn-dark mb-3" disabled>Light</button>
-                                <button type="button" class="btn btn-flat btn-secondary mb-3" disabled>Light</button>
-                                <button type="button" class="btn btn-flat btn-light mb-3" disabled>Light</button>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- basic modal start -->
+                    <?php modal(); ?>
                 </div>
-                <!-- button srea end -->
             </div>
         </div>
         <!-- main content area end -->
@@ -770,6 +559,7 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
+
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>

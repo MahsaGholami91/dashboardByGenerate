@@ -1,10 +1,12 @@
+<?php include "functions.php"  ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pagination - srtdash</title>
+    <title>Cards - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -74,22 +76,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="alert.html">Alert</a></li>
+                                    <li><a href="accordion.php">Accordion</a></li>
+                                    <li><a href="alert.php">Alert</a></li>
                                     <li><a href="badge.html">Badge</a></li>
-                                    <li><a href="button.html">Button</a></li>
+                                    <li><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li><a href="cards.html">Cards</a></li>
+                                    <li class="active"><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
-                                    <li><a href="media-object.html">Media Object</a></li>
-                                    <li><a href="modal.html">Modal</a></li>
-                                    <li class="active"><a href="pagination.html">Pagination</a></li>
+                                    <li><a href="media-object.php">Media Object</a></li>
+                                    <li><a href="modal.php">Modal</a></li>
+                                    <li><a href="pagination.php">Pagination</a></li>
                                     <li><a href="popovers.html">Popover</a></li>
                                     <li><a href="progressbar.html">Progressbar</a></li>
                                     <li><a href="tab.html">Tab</a></li>
                                     <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
                             </li>
@@ -335,7 +337,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Pagination</span></li>
+                                <li><span>Cards</span></li>
                             </ul>
                         </div>
                     </div>
@@ -354,203 +356,28 @@
             </div>
             <!-- page title area end -->
             <div class="main-content-inner">
-                <div class="row">
-                    <!-- Working With Icons start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Working With Icons</div>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                <div class="card-area">
+                    <div class="row">
+
+                        <?php 
+                            $cardData = [
+                                [
+                                    'image' => 'assets/images/card/card-img1.jpg',
+                                    'title' => 'Title 1',
+                                    'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at',
+                                ],
+                                [
+                                    'image' => 'assets/images/card/card-img2.jpg',
+                                    'title' => 'Title 2',
+                                    'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque atLorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque atLorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at',
+                                ],
+                            ];
+                            
+                            foreach ($cardData as $cardItem) {
+                                card($cardItem['image'], $cardItem['title'], $cardItem['content']);
+                            }
+                        ?>
                     </div>
-                    <!-- Working With Icons end -->
-                    <!-- Color pagination start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Color pagination</div>
-                                <nav aria-label="...">
-                                    <ul class="pagination pg-color-border">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active">
-                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Color pagination end -->
-                    <!-- Disabled and active states start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Disabled and active states</div>
-                                <nav aria-label="...">
-                                    <ul class="pagination">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active">
-                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Disabled and active states end -->
-                    <!-- Small Pagination start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Small Pagination</div>
-                                <nav aria-label="...">
-                                    <ul class="pagination pagination-sm">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">1</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Small Pagination end -->
-                    <!-- Medium Pagination start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Medium Pagination</div>
-                                <nav aria-label="...">
-                                    <ul class="pagination pagination-md">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">1</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Medium Pagination end -->
-                    <!-- Large Pagination start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Large Pagination</div>
-                                <nav aria-label="...">
-                                    <ul class="pagination pagination-lg">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">1</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Large Pagination end -->
-                    <!-- Alignment start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Alignment</div>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-start">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Alignment end -->
-                    <!-- Alignment start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Alignment</div>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Alignment end -->
-                    <!-- Alignment start -->
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="header-title">Alignment</div>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-end">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Alignment end -->
                 </div>
             </div>
         </div>
@@ -751,7 +578,6 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
-
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>

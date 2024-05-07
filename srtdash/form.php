@@ -80,22 +80,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="alert.html">Alert</a></li>
+                                    <li><a href="accordion.php">Accordion</a></li>
+                                    <li><a href="alert.php">Alert</a></li>
                                     <li><a href="badge.html">Badge</a></li>
-                                    <li><a href="button.html">Button</a></li>
+                                    <li><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li><a href="cards.html">Cards</a></li>
+                                    <li><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
-                                    <li><a href="media-object.html">Media Object</a></li>
-                                    <li><a href="modal.html">Modal</a></li>
-                                    <li><a href="pagination.html">Pagination</a></li>
+                                    <li><a href="media-object.php">Media Object</a></li>
+                                    <li><a href="modal.php">Modal</a></li>
+                                    <li><a href="pagination.php">Pagination</a></li>
                                     <li><a href="popovers.html">Popover</a></li>
                                     <li><a href="progressbar.html">Progressbar</a></li>
                                     <li><a href="tab.html">Tab</a></li>
                                     <li><a href="typography.html">Typography</a></li>
-                                    <li class="active"><a href="form.html">Form</a></li>
+                                    <li class="active"><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
                             </li>
@@ -367,64 +367,79 @@
                             <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Textual inputs</h4>
-                                        <p class="text-muted font-14 mb-4">Here are examples of <code>.form-control</code> applied to each textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.</p>
-                                        <?php textBox("Text","text","example-text-input",""); ?>
-                                        <?php textBox("Password","password","example-password-input",""); ?>
-                                        <?php textBox("Email","email","example-email-input",""); ?>
-                                        <?php textBox("Phone","tel","example-tel-input",""); ?>
-                                        <?php textBox("Number","number","example-number-input",""); ?>
-                                        <?php dateTime("Date and time","datetime-local","example-datetime-local-input","2024-06-05T15:30:00"); ?>
-                                        <?php selectBox("Select","selectOption"); ?>
-                                        <?php echo '<b class="text-muted mb-3 d-block">Radios:</b>
-                                                    <div class="custom-control custom-radio">
-                                        '; ?>
-                                        <?php radioButton("Radio1","radiobutton1","radioButton101","checked"); ?>
-                                        <?php echo '</div>'; ?>
-                                        <?php echo '<div class="custom-control custom-radio">
-                                        '; ?>
-                                        <?php radioButton("Radio2","radiobutton2","radioButton101",""); ?>
-                                        <?php echo '</div>'; ?>
-                                       
-
-
-                                        <?php echo '<b class="text-muted mb-3 d-block">Checkbox:</b>
-                                            <div class="custom-control custom-checkbox">'; ?>
-                                        <?php checkBox("customCheck2","customCheck2","",""); ?>
-                                        <?php echo '</div>';?>
-                                        <?php echo '
-                                            <div class="custom-control custom-checkbox">'; ?>
-                                        <?php checkBox("customCheck3","customCheck3","",""); ?>
-                                        <?php echo '</div>';?>
-
-                                        <?php dropDown(["Action","Action2","Action3"]); ?>
-
+                                        <h4 class="header-title">inputs</h4>
+                                        <div class="form-group">
+                                            <?php textBoxLable("Text","text","example-text-input","","col-form-label","form-control"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php textBoxLable("Password","password","example-password-input","","col-form-label","form-control"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php textBoxLable("Email","email","example-email-input","","col-form-label","form-control"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php textBoxLable("Phone","tel","example-tel-input","","col-form-label","form-control"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php textBoxLable("Number","number","example-number-input","","col-form-label","form-control"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php dateTime("Date and time","datetime-local","example-datetime-local-input","2024-06-05T15:30:00"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php selectBox("Select","selectOption"); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <b class="text-muted mb-3 d-block">Radios:</b>
+                                            <div class="custom-control custom-radio">                            
+                                                <?php radioButton("Radio1","radiobutton1","radioButton101","checked"); ?>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <?php radioButton("Radio2","radiobutton2","radioButton101",""); ?>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <b class="text-muted mb-3 d-block">Checkbox:</b>
+                                            <div class="custom-control custom-checkbox">
+                                                <?php checkBox("customCheck2","customCheck2",""); ?>
+                                            </div>
+                                        
+                                            <div class="custom-control custom-checkbox">
+                                                <?php checkBox("customCheck3","customCheck3","",""); ?>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php dropDown(["Action","Action2","Action3"]); ?>
+                                        </div>
+                                        <div class="form-group">
+                                            <?php uploadFile("Upload");?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Textual inputs end -->
                             <!-- Radios start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Radios</h4>
                                         <p class="text-muted mb-3">For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Radios end -->
                             <!-- Checkboxes start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Checkboxes</h4>
                                         <p class="text-muted mb-3">For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Checkboxes end -->
                             <!-- button with dropdown start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Buttons with dropdowns</h4>
@@ -485,7 +500,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- button with dropdown end -->
                         </div>
                     </div>
@@ -495,30 +510,14 @@
                             <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Basic form</h4>
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                                    email with anyone else.</small>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1">Password</label>
-                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Submit</button>
-                                        </form>
+                                        <h4 class="header-title">submit form</h4>
+                                    <?php    formSubmit();?>
                                     </div>
                                 </div>
                             </div>
                             <!-- basic form end -->
                             <!-- basic form start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Inline form</h4>
@@ -553,10 +552,10 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- basic form end -->
                             <!-- Input Sizes start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Input Sizes</h4>
@@ -565,10 +564,10 @@
                                         <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Input Sizes end -->
                             <!-- Input Sizes Rounded start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Input Sizes Rounded</h4>
@@ -577,10 +576,10 @@
                                         <input class="form-control form-control-sm input-rounded" type="text" placeholder=".form-control-sm">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Input Sizes Rounded end -->
                             <!-- Input Grid start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Input Grid</h4>
@@ -608,10 +607,10 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Input Grid end -->
                             <!-- Disabled forms start -->
-                            <div class="col-12 mt-5">
+                            <!-- <div class="col-12 mt-5">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Disabled forms</h4>
@@ -638,10 +637,10 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Disabled forms end -->
                             <!-- Server side start -->
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="card mt-5">
                                     <div class="card-body">
                                         <h4 class="header-title">Server side</h4>
@@ -712,10 +711,10 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Server side end -->
                             <!-- Input Group start -->
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="card mt-5">
                                     <div class="card-body">
                                         <h4 class="header-title">Input Group</h4>
@@ -771,10 +770,10 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Input Group end -->
                             <!-- Custom file input start -->
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="card mt-5">
                                     <div class="card-body">
                                         <h4 class="header-title">Custom file input</h4>
@@ -818,7 +817,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Custom file input end -->
                         </div>
                     </div>

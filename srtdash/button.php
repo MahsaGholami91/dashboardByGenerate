@@ -1,10 +1,12 @@
+<?php include "functions.php"; ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Media Object - srtdash</title>
+    <title>Button - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -74,22 +76,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="alert.html">Alert</a></li>
+                                    <li><a href="accordion.php">Accordion</a></li>
+                                    <li><a href="alert.php">Alert</a></li>
                                     <li><a href="badge.html">Badge</a></li>
-                                    <li><a href="button.html">Button</a></li>
+                                    <li class="active"><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li><a href="cards.html">Cards</a></li>
+                                    <li><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
-                                    <li class="active"><a href="media-object.html">Media Object</a></li>
-                                    <li><a href="modal.html">Modal</a></li>
-                                    <li><a href="pagination.html">Pagination</a></li>
+                                    <li><a href="media-object.php">Media Object</a></li>
+                                    <li><a href="modal.php">Modal</a></li>
+                                    <li><a href="pagination.php">Pagination</a></li>
                                     <li><a href="popovers.html">Popover</a></li>
                                     <li><a href="progressbar.html">Progressbar</a></li>
                                     <li><a href="tab.html">Tab</a></li>
                                     <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
                             </li>
@@ -335,7 +337,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Media Object</span></li>
+                                <li><span>button</span></li>
                             </ul>
                         </div>
                     </div>
@@ -354,118 +356,51 @@
             </div>
             <!-- page title area end -->
             <div class="main-content-inner">
+                <!-- button srea start -->
                 <div class="row">
+                    <!-- General button -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <div class="media mb-5">
-                                    <img class="img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <img class="img-fluid mr-4" src="assets/images/media/media2.jpg" alt="">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                    </div>
-                                </div>
+                                <h4 class="header-title">General Buttons</h4>
+                                <?php btn("button","btn btn-primary mb-3","Primary","") ?>
+                                <?php btn("button","btn btn-flat btn-success mb-3","Primary","") ?>
+                                <?php btn("button","btn btn-rounded btn-warning mb-3","Primary","") ?>
+                                <?php btn("button","btn btn-danger btn-lg btn-block","Primary","") ?>
+                                <?php btn("button","btn btn-outline-dark mb-3","Primary","") ?>
+                                <?php btn("button","btn btn-dark mb-3","light","disabled") ?>
+                               
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media mb-5">
-                                    <img class="img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                    </div>
-                                </div>
-                                <div class="media mt-5 child-media">
-                                    <img class="img-fluid mr-4" src="assets/images/media/media2.jpg" alt="">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media mb-5">
-                                    <img class="align-self-center img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Center-aligned media</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate architecto ea atque eum adipisci aspernatur, repellat commodi dignissimos delectus aliquam qui fugiat neque ut ipsa nihil quia voluptatum ratione tenetur, rem, cumque rerum quae hic eveniet! Eius vitae excepturi quae? Aperiam doloremque consequuntur qui dignissimos et ad voluptate maiores modi.
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <img class="align-self-center img-fluid mr-4" src="assets/images/media/media2.jpg" alt="">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Center-aligned media</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit ad voluptate labore, quo velit omnis voluptatibus fugit sunt molestias veritatis dicta similique perspiciatis tempora iste soluta natus non eius at ratione sit, ullam debitis deleniti. Magnam quasi blanditiis esse dolor sed tenetur eum repellendus odit. Impedit nobis ipsa sit veritatis enim! Asperiores exercitationem deserunt non quidem, error eum voluptatem.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media mb-5">
-                                    <img class="align-self-end img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Bottom-aligned media</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate architecto ea atque eum adipisci aspernatur, repellat commodi dignissimos delectus aliquam qui fugiat neque ut ipsa nihil quia voluptatum ratione tenetur, rem, cumque rerum quae hic eveniet! Eius vitae excepturi quae? Aperiam doloremque consequuntur qui dignissimos et ad voluptate maiores modi.
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <img class="align-self-end img-fluid mr-4" src="assets/images/media/media2.jpg" alt="">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Bottom-aligned media</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit ad voluptate labore, quo velit omnis voluptatibus fugit sunt molestias veritatis dicta similique perspiciatis tempora iste soluta natus non eius at ratione sit, ullam debitis deleniti. Magnam quasi blanditiis esse dolor sed tenetur eum repellendus odit. Impedit nobis ipsa sit veritatis enim! Asperiores exercitationem deserunt non quidem, error eum voluptatem.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media mb-5">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media object</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate architecto ea atque eum adipisci aspernatur, repellat commodi dignissimos delectus aliquam qui fugiat neque.
-                                    </div>
-                                    <img class="img-fluid ml-4" src="assets/images/media/media1.jpg" alt="image">
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="mb-3">Media object</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit ad voluptate labore, quo velit omnis voluptatibus fugit sunt molestias veritatis dicta similique.
-                                    </div>
-                                    <img class="img-fluid ml-4" src="assets/images/media/media2.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li class="media mb-4">
-                                        <img class="img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                        <div class="media-body">
-                                            <h5 class="mb-3">List-based media object</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                        </div>
-                                    </li>
-                                    <li class="media">
-                                        <img class="img-fluid mr-4" src="assets/images/media/media1.jpg" alt="image">
-                                        <div class="media-body">
-                                            <h5 class="mb-3">List-based media object</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Falt button -->
+                    
+                    <!-- rounded button -->
+                    
+                    <!-- tags button -->
+                    
+                    <!-- tags Flat button -->
+                    
+                    <!-- tags rounded  button -->
+                    
+                    <!-- Outline buttons -->
+                    
+                    <!-- Outline Flat buttons -->
+                 
+                    <!-- Sizes buttons -->
+                    
+                    <!-- Sizes buttons Flat -->
+                    
+                    <!-- block buttons -->
+                    
+                    <!-- block buttons Flat -->
+                    
+                    <!-- Disabled  button -->
+                    
+                    <!-- Disabled button Falt -->
+                    
                 </div>
+                <!-- button srea end -->
             </div>
         </div>
         <!-- main content area end -->
@@ -665,7 +600,6 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
-
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>

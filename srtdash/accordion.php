@@ -1,10 +1,14 @@
+
+<?php 
+    include "functions.php";
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Alert - srtdash</title>
+    <title>Accordion - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -73,22 +77,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li class="active"><a href="alert.html">Alert</a></li>
+                                    <li class="active"><a href="accordion.php">Accordion</a></li>
+                                    <li><a href="alert.php">Alert</a></li>
                                     <li><a href="badge.html">Badge</a></li>
-                                    <li><a href="button.html">Button</a></li>
+                                    <li><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li><a href="cards.html">Cards</a></li>
+                                    <li><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
-                                    <li><a href="media-object.html">Media Object</a></li>
-                                    <li><a href="modal.html">Modal</a></li>
-                                    <li><a href="pagination.html">Pagination</a></li>
+                                    <li><a href="media-object.php">Media Object</a></li>
+                                    <li><a href="modal.php">Modal</a></li>
+                                    <li><a href="pagination.php">Pagination</a></li>
                                     <li><a href="popovers.html">Popover</a></li>
                                     <li><a href="progressbar.html">Progressbar</a></li>
                                     <li><a href="tab.html">Tab</a></li>
                                     <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
                             </li>
@@ -334,7 +338,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Alert</span></li>
+                                <li><span>Accordion</span></li>
                             </ul>
                         </div>
                     </div>
@@ -353,162 +357,263 @@
             </div>
             <!-- page title area end -->
             <div class="main-content-inner">
-                <!-- alert srea start -->
-                <div class="alert-area">
-                    <div class="row">
-                        <!-- normal alert area start -->
-                        <div class="col-lg-6 mt-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">alerts</h4>
-                                    <div class="alert-items">
-                                        <div class="alert alert-primary" role="alert">
-                                            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                <!-- accroding start -->
+                <div class="row">
+                    <!-- accordion style 1 start -->
+                    <!-- <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+                                <div id="accordion1" class="according">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#accordion11">Collapsible Group
+                                                Item #1</a>
                                         </div>
-                                        <div class="alert alert-success" role="alert">
-                                            <strong>Well done!</strong> You successfully read this important alert message.
+                                        <div id="accordion11" class="collapse show" data-parent="#accordion1">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
                                         </div>
-                                        <div class="alert alert-danger" role="alert">
-                                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion12">Collapsible
+                                                Group Item #2</a>
                                         </div>
-                                        <div class="alert alert-warning" role="alert">
-                                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                        <div id="accordion12" class="collapse" data-parent="#accordion1">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
                                         </div>
-                                        <div class="alert alert-info" role="alert">
-                                            <strong>Notice!</strong> Your info message text is here.
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion13">Collapsible
+                                                Group Item #3</a>
+                                        </div>
+                                        <div id="accordion13" class="collapse" data-parent="#accordion1">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- normal alert area end -->
-                        <!-- link alert area start -->
-                        <div class="col-lg-6 mt-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">alert link</h4>
-                                    <div class="alert-items">
-                                        <div class="alert alert-primary" role="alert">
-                                            <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your
-                                                attention,
-                                            </a>but it's not super important.
-                                        </div>
-                                        <div class="alert alert-success" role="alert">
-                                            <strong>Well done!</strong> You <a href="#" class="alert-link">successfully read
-                                                this important</a> alert message.
-                                        </div>
-                                        <div class="alert alert-danger" role="alert">
-                                            <strong>Oh snap!</strong> Change a few things up and try <a href="#" class="alert-link">submitting
-                                                again.
-                                            </a>
-                                        </div>
-                                        <div class="alert alert-warning" role="alert">
-                                            <strong>Warning!</strong> Better <a href="#" class="alert-link">check yourself</a>, you're not looking too good.
-                                        </div>
-                                        <div class="alert alert-info" role="alert">
-                                            <strong>Notice!</strong> Your info message text is <a href="#" class="alert-link">here.</a>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div> -->
+                    <!-- accordion style 1 end -->
+                    <!-- accordion style 2 start -->
+                    <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+
+                                <?php 
+                                $accordionData = [
+                                    [
+                                        'title' => 'Title 1',
+                                        'parentId' => 'parent1',
+                                        'childId' => 'child1',
+                                        'text' => 'Text 1',
+                                    ],
+                                    [
+                                        'title' => 'Title 2',
+                                        'parentId' => 'parent2',
+                                        'childId' => 'child2',
+                                        'text' => 'Text 2',
+                                    ],
+                                ];
+                                
+                                foreach ($accordionData as $accordionItem) {
+                                    accordion($accordionItem['title'], $accordionItem['parentId'], $accordionItem['childId'], $accordionItem['text'],"card-link collapsed");
+                                }
+                                
+                                
+                                 ?>
+                              
                             </div>
                         </div>
-                        <!-- link alert area end -->
-                        <!-- additional content area start -->
-                        <div class="col-lg-6 mt-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">Additional Content</h4>
-                                    <div class="additional-content">
-                                        <div class="alert alert-primary" role="alert">
-                                            <h4 class="alert-heading">Well done!</h4>
-                                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                            <hr>
-                                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                        </div>
-                                        <div class="alert alert-danger" role="alert">
-                                            <h4 class="alert-heading">Well done!</h4>
-                                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                            <hr>
-                                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                        </div>
-                                        <div class="alert alert-success" role="alert">
-                                            <h4 class="alert-heading">Well done!</h4>
-                                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                            <hr>
-                                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- additional content area end -->
-                        <!-- dismiss alert area start -->
-                        <div class="col-lg-6 mt-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">Dismissing</h4>
-                                    <div class="alert-dismiss">
-                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-info alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-light alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                        <div class="alert alert-info alert-dismissible fade show" role="alert">
-                                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span class="fa fa-times"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- dismiss alert area end -->
                     </div>
+                    <!-- accordion style 2 end -->
+                    <!-- accordion style 3 start -->
+                    <!-- <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+                                <div id="accordion3" class="according accordion-s3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#accordion31">Collapsible Group
+                                                Item #1</a>
+                                        </div>
+                                        <div id="accordion31" class="collapse show" data-parent="#accordion3">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion32">Collapsible
+                                                Group Item #2</a>
+                                        </div>
+                                        <div id="accordion32" class="collapse" data-parent="#accordion3">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion33">Collapsible
+                                                Group Item #3</a>
+                                        </div>
+                                        <div id="accordion33" class="collapse" data-parent="#accordion3">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- accordion style 3 end -->
+                    <!-- accordion style 4 start -->
+                    <!-- <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+                                <div id="accordion4" class="according accordion-s3 gradiant-bg">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#accordion41">Collapsible Group
+                                                Item #1</a>
+                                        </div>
+                                        <div id="accordion41" class="collapse show" data-parent="#accordion4">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion42">Collapsible
+                                                Group Item #2</a>
+                                        </div>
+                                        <div id="accordion42" class="collapse" data-parent="#accordion4">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion43">Collapsible
+                                                Group Item #3</a>
+                                        </div>
+                                        <div id="accordion43" class="collapse" data-parent="#accordion4">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- accordion style 4 end -->
+                    <!-- accordion style 5 start -->
+                    <!-- <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+                                <div id="accordion5" class="according accordion-s2 gradiant-bg">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#accordion51">Collapsible Group
+                                                Item #1</a>
+                                        </div>
+                                        <div id="accordion51" class="collapse show" data-parent="#accordion5">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion52">Collapsible
+                                                Group Item #2</a>
+                                        </div>
+                                        <div id="accordion52" class="collapse" data-parent="#accordion5">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion53">Collapsible
+                                                Group Item #3</a>
+                                        </div>
+                                        <div id="accordion53" class="collapse" data-parent="#accordion5">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- accordion style 5 end -->
+                    <!-- accordion style 6 start -->
+                    <!-- <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Accordion 1</h4>
+                                <div id="accordion6" class="according gradiant-bg">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#accordion61">Collapsible Group
+                                                Item #1</a>
+                                        </div>
+                                        <div id="accordion61" class="collapse show" data-parent="#accordion6">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion62">Collapsible
+                                                Group Item #2</a>
+                                        </div>
+                                        <div id="accordion62" class="collapse" data-parent="#accordion6">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#accordion63">Collapsible
+                                                Group Item #3</a>
+                                        </div>
+                                        <div id="accordion63" class="collapse" data-parent="#accordion6">
+                                            <div class="card-body">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque porro alias assumenda accusamus incidunt odio molestiae maxime quo atque in et quaerat, vel unde aliquam aperiam quidem consectetur omnis dicta officiis? Dolorum, error dolorem!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- accordion style 6 end -->
                 </div>
-                <!-- alert srea end -->
+                <!-- accroding end -->
             </div>
         </div>
         <!-- main content area end -->
