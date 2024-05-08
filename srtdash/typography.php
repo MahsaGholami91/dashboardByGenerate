@@ -1,4 +1,4 @@
-<?php include "functions.php"  ?>
+<?php include "functions.php"; ?>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cards - srtdash</title>
+    <title>Typography - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -81,7 +81,7 @@
                                     <li><a href="badge.html">Badge</a></li>
                                     <li><a href="button.php">Button</a></li>
                                     <li><a href="button-group.html">Button Group</a></li>
-                                    <li class="active"><a href="cards.php">Cards</a></li>
+                                    <li><a href="cards.php">Cards</a></li>
                                     <li><a href="dropdown.html">Dropdown</a></li>
                                     <li><a href="list-group.html">List Group</a></li>
                                     <li><a href="media-object.php">Media Object</a></li>
@@ -90,7 +90,7 @@
                                     <li><a href="popovers.php">Popover</a></li>
                                     <li><a href="progressbar.php">Progressbar</a></li>
                                     <li><a href="tab.php">Tab</a></li>
-                                    <li><a href="typography.php">Typography</a></li>
+                                    <li class="active"><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -337,7 +337,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Cards</span></li>
+                                <li><span>Typography</span></li>
                             </ul>
                         </div>
                     </div>
@@ -356,27 +356,63 @@
             </div>
             <!-- page title area end -->
             <div class="main-content-inner">
-                <div class="card-area">
-                    <div class="row">
-
-                        <?php 
-                            $cardData = [
-                                [
-                                    'image' => 'assets/images/card/card-img1.jpg',
-                                    'title' => 'Title 1',
-                                    'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at',
-                                ],
-                                [
-                                    'image' => 'assets/images/card/card-img2.jpg',
-                                    'title' => 'Title 2',
-                                    'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque atLorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque atLorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at',
-                                ],
-                            ];
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <!-- heading area start -->
+                           
+                            <!-- heading area end -->
+                            <!-- Customizing Headings area start -->
+                            <div class="col-12 mt-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>You can use the mark tag to
+                                            <?php highlightText("highlight");?>
+                                        </p>
+                                        <br>
+                                        <p>
+                                        <?php underlineText("This line of text is meant to be treated as deleted text.");?>
+                                        </p>
+                                          
+                                        <br>
+                                        <p>You can use the mark tag to
+                                            <?php boldText("highlight");?>
+                                        </p>
+                                        <br>
+                                        <p>You can use the mark tag to
+                                            <?php italicText("highlight");?>
+                                        </p>
+                                        <br>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Customizing Headings area end -->
+                            <!-- Blockquotes area start -->
+                            <div class="col-12 mt-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Blockquotes</h4>
+                                        <?php blockquote("Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illo fuga sunt nobis possimus incidunt dolor ratione aspernatur doloremque amet, quisquam porro esse distinctio error.","Someone famous in","Source Title"); ?>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blockquotes area end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <!-- heading class area start -->
                             
-                            foreach ($cardData as $cardItem) {
-                                card($cardItem['image'], $cardItem['title'], $cardItem['content']);
-                            }
-                        ?>
+                            <!-- heading class area end -->
+                            <!-- Inline Text Elements area start -->
+                            
+                            <!-- Inline Text Elements area end -->
+                            <!-- Text Color area start -->
+                            
+                            <!-- Text Color area end -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -578,6 +614,7 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
+
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>

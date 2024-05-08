@@ -1,10 +1,12 @@
+<?php include "functions.php" ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Popovers - srtdash</title>
+    <title>Datatable - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,9 +15,14 @@
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.min.css">
-    <!-- amchart css -->
+    <!-- amcharts css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-    <!-- others css -->
+    <!-- Start datatable css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+    <!-- style css -->
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/default-css.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -71,7 +78,7 @@
                                     <li><a href="piechart.html">pie chart</a></li>
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
                                     <li><a href="accordion.php">Accordion</a></li>
@@ -85,10 +92,10 @@
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
-                                    <li class="active"><a href="popovers.html">Popover</a></li>
-                                    <li><a href="progressbar.html">Progressbar</a></li>
-                                    <li><a href="tab.html">Tab</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="popovers.php">Popover</a></li>
+                                    <li><a href="progressbar.php">Progressbar</a></li>
+                                    <li><a href="tab.php">Tab</a></li>
+                                    <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -100,13 +107,13 @@
                                     <li><a href="themify.html">themify icons</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
                                     <span>Tables</span></a>
                                 <ul class="collapse">
-                                    <li><a href="table-basic.html">basic table</a></li>
-                                    <li><a href="table-layout.html">table layout</a></li>
-                                    <li><a href="datatable.html">datatable</a></li>
+                                    <li><a href="table-basic.php">basic table</a></li>
+                                    <li><a href="table-layout.php">table layout</a></li>
+                                    <li class="active"><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
@@ -335,7 +342,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Popovers</span></li>
+                                <li><span>Datatable</span></li>
                             </ul>
                         </div>
                     </div>
@@ -355,133 +362,52 @@
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
-                    <!-- click popover start -->
-                    <div class="col-lg-6 mt-5">
+                    <!-- data table start -->
+                    <div class="col-12 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">Click Toggle Popover</h4>
-                                <button type="button" class="btn btn-lg btn-primary mb-3 mr-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-                                <button type="button" class="btn btn-lg btn-success mb-3 mr-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-                                <button type="button" class="btn btn-lg btn-danger mb-3" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+                                <h4 class="header-title">Data Table Default</h4>
+                                
                             </div>
                         </div>
                     </div>
-                    <!-- click popover end -->
-                    <!-- click popover start -->
-                    <div class="col-lg-6 mt-5">
+                    <!-- data table end -->
+                    <!-- Primary table start -->
+                    <div class="col-12 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">Click Toggle Flat</h4>
-                                <button type="button" class="btn btn-lg btn-primary btn-flat mb-3 mr-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-                                <button type="button" class="btn btn-lg btn-success btn-flat mb-3 mr-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-                                <button type="button" class="btn btn-lg btn-danger btn-flat mb-3" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+                                <h4 class="header-title">Data Table Primary</h4>
+                              
                             </div>
                         </div>
                     </div>
-                    <!-- click popover end -->
-                    <!-- Top directions start -->
-                    <div class="col-lg-6 mt-5">
+                    <!-- Primary table end -->
+                    <!-- Dark table start -->
+                    <div class="col-12 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">Top directions</h4>
-                                <button type="button" class="btn btn-lg btn-primary mb-3 mr-1" data-container="body" data-toggle="popover" title="Popover title" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
-                                <button type="button" class="btn btn-lg btn-success mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
-                                <button type="button" class="btn btn-lg btn-dark mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
-                                <button type="button" class="btn btn-lg btn-right mb-3" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
+                                <h4 class="header-title">Data Table Dark</h4>
+                                <?php 
+                                    $headers = ['Name', 'Position', 'Office', 'Age', 'Start Date'];
+                                    $data = [
+                                        ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
+                                        ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
+                                        ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12'],
+                                        ['Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13'],
+                                        ['Brenden Wagner', 'Software Engineer', 'San Francisco', '28', '2011/06/07'],
+                                        ['Bruno Nash', 'Software Engineer', 'Edinburgh', '21', '2012/03/29'],
+                                        ['Caesar Vance', 'Pre-Sales Support', 'New York', '29', '2011/12/12']
+                                    ];
+
+                                    dataTable($headers, $data);
+                                
+                                
+                                
+                                ?>
                             </div>
                         </div>
                     </div>
-                    <!-- Top directions end -->
-                    <!-- Right directions start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Right directions</h4>
-                                <button type="button" class="btn btn-lg btn-primary mb-3 mr-1" data-container="body" data-toggle="popover" title="Popover title" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Right</button>
-                                <button type="button" class="btn btn-lg btn-success mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Right</button>
-                                <button type="button" class="btn btn-lg btn-warning mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Right</button>
-                                <button type="button" class="btn btn-lg btn-danger mb-3" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Right</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Right directions end -->
-                    <!-- Bottom directions start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Bottom directions</h4>
-                                <button type="button" class="btn btn-lg btn-primary mb-3 mr-1" data-container="body" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover Bottom
-                                </button>
-                                <button type="button" class="btn btn-lg btn-success mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover Bottom
-                                </button>
-                                <button type="button" class="btn btn-lg btn-info mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover Bottom
-                                </button>
-                                <button type="button" class="btn btn-lg btn-dark mb-3" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover Bottom
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Bottom directions end -->
-                    <!-- Left directions start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Left directions</h4>
-                                <button type="button" class="btn btn-lg btn-primary mb-3 mr-1" data-container="body" data-toggle="popover" title="Popover title" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Left</button>
-                                <button type="button" class="btn btn-lg btn-success mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Left</button>
-                                <button type="button" class="btn btn-lg btn-warning mb-3 mr-1" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Left</button>
-                                <button type="button" class="btn btn-lg btn-danger mb-3" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on Left</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Left directions end -->
-                    <!-- Dismissable start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Dismissable Popover</h4>
-                                <a tabindex="0" class="btn btn-lg btn-primary btn-lg mb-3 mr-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                                    popover
-                                </a>
-                                <a tabindex="0" class="btn btn-lg btn-success btn-lg mb-3 mr-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                                    popover
-                                </a>
-                                <a tabindex="0" class="btn btn-lg btn-danger btn-lg mb-3 mr-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                                    popover
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Dismissable end -->
-                    <!-- Dismissable start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Disabled Popover</h4>
-                                <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-                                    <button class="btn btn-primary btn-lg mb-3 mr-1" style="pointer-events: none;" type="button" disabled>Disabled
-                                        button
-                                    </button>
-                                </span>
-                                <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-                                    <button class="btn btn-success btn-lg mb-3 mr-1" style="pointer-events: none;" type="button" disabled>Disabled
-                                        button
-                                    </button>
-                                </span>
-                                <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-                                    <button class="btn btn-danger btn-lg mb-3 mr-1" style="pointer-events: none;" type="button" disabled>Disabled
-                                        button
-                                    </button>
-                                </span>
-                                <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-                                    <button class="btn btn-dark btn-lg mb-3" style="pointer-events: none;" type="button" disabled>Disabled
-                                        button
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Dismissable end -->
+                    <!-- Dark table end -->
                 </div>
             </div>
         </div>
@@ -683,6 +609,12 @@
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
 
+    <!-- Start datatable js -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>

@@ -1,10 +1,12 @@
+<?php include "functions.php"; ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Typography - srtdash</title>
+    <title>Progressbar - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -85,10 +87,10 @@
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
-                                    <li><a href="popovers.html">Popover</a></li>
-                                    <li><a href="progressbar.html">Progressbar</a></li>
-                                    <li><a href="tab.html">Tab</a></li>
-                                    <li class="active"><a href="typography.html">Typography</a></li>
+                                    <li><a href="popovers.php">Popover</a></li>
+                                    <li class="active"><a href="progressbar.php">Progressbar</a></li>
+                                    <li><a href="tab.php">Tab</a></li>
+                                    <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -104,9 +106,9 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
                                     <span>Tables</span></a>
                                 <ul class="collapse">
-                                    <li><a href="table-basic.html">basic table</a></li>
-                                    <li><a href="table-layout.html">table layout</a></li>
-                                    <li><a href="datatable.html">datatable</a></li>
+                                    <li><a href="table-basic.php">basic table</a></li>
+                                    <li><a href="table-layout.php">table layout</a></li>
+                                    <li><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
@@ -335,7 +337,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Typography</span></li>
+                                <li><span>Progressbar</span></li>
                             </ul>
                         </div>
                     </div>
@@ -355,156 +357,40 @@
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <!-- heading area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Headings</h4>
-                                        <h1>h1. Bootstrap heading</h1>
-                                        <br>
-                                        <h2>h2. Bootstrap heading</h2>
-                                        <br>
-                                        <h3>h3. Bootstrap heading</h3>
-                                        <br>
-                                        <h4>h4. Bootstrap heading</h4>
-                                        <br>
-                                        <h5>h5. Bootstrap heading</h5>
-                                        <br>
-                                        <h6>h6. Bootstrap heading</h6>
+                    <!-- progress area start -->
+                    <div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Progress</h4>
+                                <div class="progress_area">
+                                    <div class="progress">
+                                        <?php 
+                                            progressBar("progress-bar","10","10","100");                                                                        
+                                        ?>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <?php 
+                                            progressBar("progress-bar bg-danger","25","25","100");                                                                        
+                                        ?>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <?php 
+                                            progressBar("progress-bar bg-success progress-bar-striped","75","75","100");                                                                        
+                                        ?>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <?php 
+                                            progressBar("progress-bar progress-bar-striped bg-warning progress-bar-animated","100","100","100");                                                                        
+                                        ?>
                                     </div>
                                 </div>
                             </div>
-                            <!-- heading area end -->
-                            <!-- Customizing Headings area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Customizing Headings</h4>
-                                        <h1>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h1>
-                                        <br>
-                                        <h2>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h2>
-                                        <br>
-                                        <h3>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h3>
-                                        <br>
-                                        <h4>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h4>
-                                        <br>
-                                        <h5>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h5>
-                                        <br>
-                                        <h6>
-                                            Fancy display heading
-                                            <small class="text-muted">With faded secondary text</small>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Customizing Headings area end -->
-                            <!-- Blockquotes area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Blockquotes</h4>
-                                        <blockquote class="blockquote">
-                                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illo fuga sunt nobis possimus incidunt dolor ratione aspernatur doloremque amet, quisquam porro esse distinctio error. Delectus vitae obcaecati, suscipit velit vero illo maxime illum perferendis magnam tenetur praesentium non eligendi.</p>
-                                            <footer class="blockquote-footer">Someone famous in
-                                                <cite title="Source Title">Source Title
-                                                </cite>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blockquotes area end -->
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <!-- heading class area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Headings Class</h4>
-                                        <p class="h1">h1. Bootstrap heading</p>
-                                        <p class="h2">h2. Bootstrap heading</p>
-                                        <p class="h3">h3. Bootstrap heading</p>
-                                        <p class="h4">h4. Bootstrap heading</p>
-                                        <p class="h5">h5. Bootstrap heading</p>
-                                        <p class="h6">h6. Bootstrap heading</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- heading class area end -->
-                            <!-- Inline Text Elements area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Inline Text Elements</h4>
-                                        <p>You can use the mark tag to
-                                            <mark>highlight</mark> text.</p>
-                                        <br>
-                                        <p>
-                                            <del>This line of text is meant to be treated as deleted text.</del>
-                                        </p>
-                                        <br>
-                                        <p>
-                                            <s>This line of text is meant to be treated as no longer accurate.</s>
-                                        </p>
-                                        <br>
-                                        <p>
-                                            <ins>This line of text is meant to be treated as an addition to the document.</ins>
-                                        </p>
-                                        <br>
-                                        <p><u>This line of text will render as underlined</u></p>
-                                        <br>
-                                        <p><small>This line of text is meant to be treated as fine print.</small></p>
-                                        <br>
-                                        <p><strong>This line rendered as bold text.</strong></p>
-                                        <br>
-                                        <p><em>This line rendered as italicized text.</em></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Inline Text Elements area end -->
-                            <!-- Text Color area start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Text Color</h4>
-                                        <p class="text-primary">You can use the mark tag to highlight text.</p>
-                                        <br>
-                                        <p class="text-secondary">This line of text is meant to be treated as deleted text.</p>
-                                        <br>
-                                        <p class="text-success">This line of text is meant to be treated as no longer accurate.</p>
-                                        <br>
-                                        <p class="text-danger">This line of text is meant to be treated as an addition to the document.</p>
-                                        <br>
-                                        <p class="text-warning">This line of text will render as underlined</p>
-                                        <br>
-                                        <p class="text-info">This line of text is meant to be treated as fine print.</p>
-                                        <br>
-                                        <p class="text-dark">This line rendered as italicized text.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Text Color area end -->
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </div>

@@ -1,10 +1,13 @@
+
+<?php include "functions.php"; ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Table Layout - srtdash</title>
+    <title>Table Basic - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -85,10 +88,10 @@
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
-                                    <li><a href="popovers.html">Popover</a></li>
-                                    <li><a href="progressbar.html">Progressbar</a></li>
-                                    <li><a href="tab.html">Tab</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="popovers.php">Popover</a></li>
+                                    <li><a href="progressbar.php">Progressbar</a></li>
+                                    <li><a href="tab.php">Tab</a></li>
+                                    <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -104,9 +107,9 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
                                     <span>Tables</span></a>
                                 <ul class="collapse">
-                                    <li><a href="table-basic.html">basic table</a></li>
-                                    <li class="active"><a href="table-layout.html">table layout</a></li>
-                                    <li><a href="datatable.html">datatable</a></li>
+                                    <li class="active"><a href="table-basic.php">basic table</a></li>
+                                    <li><a href="table-layout.php">table layout</a></li>
+                                    <li><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
@@ -335,7 +338,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Table Layout</span></li>
+                                <li><span>Table Basic</span></li>
                             </ul>
                         </div>
                     </div>
@@ -355,317 +358,53 @@
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
-                    <!-- basic table start -->
+                    <!-- table primary start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">Basic Table</h4>
-                                <div class="single-table">
-                                    <div class="table-responsive">
-                                        <table class="table text-center">
-                                            <thead class="text-uppercase">
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">date</th>
-                                                    <th scope="col">price</th>
-                                                    <th scope="col">action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                <h4 class="header-title">Thead Primary</h4>
+                                <?php   
+                                    $headers = ['ID', 'Name', 'Date', 'Price'];
+                                    $data = [
+                                        ['id' => 1, 'name' => 'Jafar', 'date' => '09 / 07 / 2018', 'price' => '$120'],
+                                        ['id' => 2, 'name' => 'Ali', 'date' => '09 / 07 / 2018', 'price' => '$150'],
+                                        ['id' => 3, 'name' => 'Test', 'date' => '09 / 07 / 2018', 'price' => '$120'],
+                                        ['id' => 4, 'name' => 'Jone', 'date' => '09 / 07 / 2018', 'price' => '$150']
+                                    ];
+                                    
+                                    basicTable($headers, $data,"text-uppercase bg-dark","table-dark");
+                                ?>
                             </div>
                         </div>
                     </div>
-                    <!-- basic table end -->
-                    <!-- Striped table start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Striped Rows</h4>
-                                <div class="single-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped text-center">
-                                            <thead class="text-uppercase">
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">date</th>
-                                                    <th scope="col">price</th>
-                                                    <th scope="col">action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Striped table end -->
-                    <!-- Bordered Table start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Bordered Table</h4>
-                                <div class="single-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered text-center">
-                                            <thead class="text-uppercase">
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">date</th>
-                                                    <th scope="col">price</th>
-                                                    <th scope="col">action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Bordered Table end -->
-                    <!-- Hoverable Rows Table start -->
-                    <div class="col-lg-6 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Hoverable Rows</h4>
-                                <div class="single-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover text-center">
-                                            <thead class="text-uppercase">
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">date</th>
-                                                    <th scope="col">price</th>
-                                                    <th scope="col">action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$120</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>jone</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>$150</td>
-                                                    <td><i class="ti-trash"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hoverable Rows Table end -->
-                    <!-- Progress Table start -->
-                    <div class="col-12 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Progress Table</h4>
-                                <div class="single-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover progress-table text-center">
-                                            <thead class="text-uppercase">
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">task</th>
-                                                    <th scope="col">Deadline</th>
-                                                    <th scope="col">Progress</th>
-                                                    <th scope="col">status</th>
-                                                    <th scope="col">action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-primary">pending</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-warning">pending</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-success">complate</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-warning">panding</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Progress Table end -->
+                    <!-- table primary end -->
+                    <!-- table success start -->
+                    
+                    <!-- table success end -->
+                    <!-- table info start -->
+                    
+                    <!-- table info end -->
+                    <!-- table warning start -->
+                    
+                    <!-- table warning end -->
+                    <!-- table danger start -->
+                    
+                    <!-- table danger end -->
+                    <!-- table dark start -->
+                    
+                    <!-- table dark end -->
+                    <!-- table light start -->
+                   
+                    <!-- table light end -->
+                    <!-- table secondary start -->
+                   
+                    <!-- table secondary end -->
+                    <!-- Contextual Classes start -->
+                   
+                    <!-- Contextual Classes end -->
+                    <!-- Contextual Classes start -->
+                    
+                    <!-- Contextual Classes end -->
                 </div>
             </div>
         </div>

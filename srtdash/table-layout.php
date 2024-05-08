@@ -1,10 +1,14 @@
+<?php 
+    include "functions.php";
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Tab - srtdash</title>
+    <title>Table Layout - srtdash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -71,7 +75,7 @@
                                     <li><a href="piechart.html">pie chart</a></li>
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI Features</span></a>
                                 <ul class="collapse">
                                     <li><a href="accordion.php">Accordion</a></li>
@@ -85,10 +89,10 @@
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
-                                    <li><a href="popovers.html">Popover</a></li>
-                                    <li><a href="progressbar.html">Progressbar</a></li>
-                                    <li class="active"><a href="tab.html">Tab</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="popovers.php">Popover</a></li>
+                                    <li><a href="progressbar.php">Progressbar</a></li>
+                                    <li><a href="tab.php">Tab</a></li>
+                                    <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -100,13 +104,13 @@
                                     <li><a href="themify.html">themify icons</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
                                     <span>Tables</span></a>
                                 <ul class="collapse">
-                                    <li><a href="table-basic.html">basic table</a></li>
-                                    <li><a href="table-layout.html">table layout</a></li>
-                                    <li><a href="datatable.html">datatable</a></li>
+                                    <li><a href="table-basic.php">basic table</a></li>
+                                    <li class="active"><a href="table-layout.php">table layout</a></li>
+                                    <li><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
@@ -335,7 +339,7 @@
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Tab</span></li>
+                                <li><span>Table Layout</span></li>
                             </ul>
                         </div>
                     </div>
@@ -355,122 +359,317 @@
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
-                    <!-- nav tab start -->
+                    <!-- basic table start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content mt-3" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
+                                <h4 class="header-title">Basic Table</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table text-center">
+                                            <thead class="text-uppercase">
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">date</th>
+                                                    <th scope="col">price</th>
+                                                    <th scope="col">action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- nav tab end -->
-                    <!-- anchor tab start -->
+                    <!-- basic table end -->
+                    <!-- Striped table start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-                                    </div>
-                                </nav>
-                                <div class="tab-content mt-3" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
+                                <h4 class="header-title">Striped Rows</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped text-center">
+                                            <thead class="text-uppercase">
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">date</th>
+                                                    <th scope="col">price</th>
+                                                    <th scope="col">action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- anchor tab end -->
-                    <!-- tab start -->
+                    <!-- Striped table end -->
+                    <!-- Bordered Table start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione officia libero maiores, explicabo cumque dolorem quasi rerum molestiae. Ex ut tempora odit voluptatem, libero culpa nostrum dolores enim velit magnam repellendus! Porro repudiandae mollitia odit eveniet molestias consequuntur deleniti quisquam ducimus quidem autem? Error culpa nostrum, nemo quo quisquam illo architecto id nihil pariatur esse recusandae alias quaerat voluptates iure consequuntur repellat cupiditate perferendis iste praesentium. Suscipit, molestias consequatur.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione officia libero maiores, explicabo cumque dolorem quasi rerum molestiae. Ex ut tempora odit voluptatem, libero culpa nostrum dolores enim velit magnam repellendus! Porro repudiandae mollitia odit eveniet molestias consequuntur deleniti quisquam ducimus quidem autem? Error culpa nostrum, nemo quo quisquam illo architecto id nihil pariatur esse recusandae alias quaerat voluptates iure consequuntur repellat cupiditate perferendis iste praesentium. Suscipit, molestias consequatur.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione officia libero maiores, explicabo cumque dolorem quasi rerum molestiae. Ex ut tempora odit voluptatem, libero culpa nostrum dolores enim velit magnam repellendus! Porro repudiandae mollitia odit eveniet molestias consequuntur deleniti quisquam ducimus quidem autem? Error culpa nostrum, nemo quo quisquam illo architecto id nihil pariatur esse recusandae alias quaerat voluptates iure consequuntur repellat cupiditate perferendis iste praesentium. Suscipit, molestias consequatur.</p>
+                                <h4 class="header-title">Bordered Table</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered text-center">
+                                            <thead class="text-uppercase">
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">date</th>
+                                                    <th scope="col">price</th>
+                                                    <th scope="col">action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- tab end -->
-                    <!-- left align tab start -->
+                    <!-- Bordered Table end -->
+                    <!-- Hoverable Rows Table start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <div class="d-md-flex">
-                                    <div class="nav flex-column nav-pills mr-4 mb-3 mb-sm-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-                                    </div>
-                                    <div class="tab-content" id="v-pills-tabContent">
-                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat blanditiis eaque ab qui accusamus laudantium perspiciatis sint quibusdam at eius consequatur quos possimus aspernatur debitis deleniti sed odit provident repudiandae suscipit officiis, tempora voluptas, excepturi perferendis. Quasi delectus tempora temporibus ipsa soluta mollitia, doloremque corrupti labore, quae voluptatem obcaecati consequuntur ad ipsum fugit impedit cum. Facere, ea? Eveniet quisquam ratione voluptate rerum tempora, consectetur assumenda. Porro temporibus suscipit corporis nulla?</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat blanditiis eaque ab qui accusamus laudantium perspiciatis sint quibusdam at eius consequatur quos possimus aspernatur debitis deleniti sed odit provident repudiandae suscipit officiis, tempora voluptas, excepturi perferendis. Quasi delectus tempora temporibus ipsa soluta mollitia, doloremque corrupti labore, quae voluptatem obcaecati consequuntur ad ipsum fugit impedit cum. Facere, ea? Eveniet quisquam ratione voluptate rerum tempora, consectetur assumenda. Porro temporibus suscipit corporis nulla?</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat blanditiis eaque ab qui accusamus laudantium perspiciatis sint quibusdam at eius consequatur quos possimus aspernatur debitis deleniti sed odit provident repudiandae suscipit officiis, tempora voluptas, excepturi perferendis. Quasi delectus tempora temporibus ipsa soluta mollitia, doloremque corrupti labore, quae voluptatem obcaecati consequuntur ad ipsum fugit impedit cum. Facere, ea? Eveniet quisquam ratione voluptate rerum tempora, consectetur assumenda. Porro temporibus suscipit corporis nulla?</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat blanditiis eaque ab qui accusamus laudantium perspiciatis sint quibusdam at eius consequatur quos possimus aspernatur debitis deleniti sed odit provident repudiandae suscipit officiis, tempora voluptas, excepturi perferendis. Quasi delectus tempora temporibus ipsa soluta mollitia, doloremque corrupti labore, quae voluptatem obcaecati consequuntur ad ipsum fugit impedit cum. Facere, ea? Eveniet quisquam ratione voluptate rerum tempora, consectetur assumenda. Porro temporibus suscipit corporis nulla?</p>
-                                        </div>
+                                <h4 class="header-title">Hoverable Rows</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover text-center">
+                                            <thead class="text-uppercase">
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">date</th>
+                                                    <th scope="col">price</th>
+                                                    <th scope="col">action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$120</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>jone</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>$150</td>
+                                                    <td><i class="ti-trash"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- left align tab end -->
+                    <!-- Hoverable Rows Table end -->
+                    <!-- Progress Table start -->
+                    <div class="col-12 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Progress Table</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover progress-table text-center">
+                                            <thead class="text-uppercase">
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">task</th>
+                                                    <th scope="col">Deadline</th>
+                                                    <th scope="col">Progress</th>
+                                                    <th scope="col">status</th>
+                                                    <th scope="col">action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 8px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="status-p bg-primary">pending</span></td>
+                                                    <td>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
+                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 8px;">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="status-p bg-warning">pending</span></td>
+                                                    <td>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
+                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 8px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="status-p bg-success">complate</span></td>
+                                                    <td>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
+                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Mark</td>
+                                                    <td>09 / 07 / 2018</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 8px;">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="status-p bg-warning">panding</span></td>
+                                                    <td>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
+                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progress Table end -->
                 </div>
             </div>
         </div>

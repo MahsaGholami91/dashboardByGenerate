@@ -86,10 +86,10 @@
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
-                                    <li><a href="popovers.html">Popover</a></li>
-                                    <li><a href="progressbar.html">Progressbar</a></li>
-                                    <li><a href="tab.html">Tab</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="popovers.php">Popover</a></li>
+                                    <li><a href="progressbar.php">Progressbar</a></li>
+                                    <li><a href="tab.php">Tab</a></li>
+                                    <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
                                     <li><a href="grid.html">grid system</a></li>
                                 </ul>
@@ -105,9 +105,9 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
                                     <span>Tables</span></a>
                                 <ul class="collapse">
-                                    <li><a href="table-basic.html">basic table</a></li>
-                                    <li><a href="table-layout.html">table layout</a></li>
-                                    <li><a href="datatable.html">datatable</a></li>
+                                    <li><a href="table-basic.php">basic table</a></li>
+                                    <li><a href="table-layout.php">table layout</a></li>
+                                    <li><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
