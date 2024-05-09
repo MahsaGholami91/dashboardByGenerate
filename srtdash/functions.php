@@ -359,26 +359,7 @@ function basicTable($headers, $data,$headClass,$bodyClass) {
 function dataTable($headers, $data) {
     echo '<div class="data-tables datatable-dark">
             <div id="dataTable3_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="dataTables_length" id="dataTable3_length">
-                            <label>Show 
-                                <select name="dataTable3_length" aria-controls="dataTable3" class="custom-select custom-select-sm form-control form-control-sm">
-                                    <option value="10">10</option>
-                                    <option value="25">25</option>
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                </select> entries
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div id="dataTable3_filter" class="dataTables_filter">
-                            <label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable3"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                                <div class="row">
                     <div class="col-sm-12">
                         <table id="dataTable3" class="text-center dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="dataTable3_info" style="width: 1162px;">
                             <thead class="text-capitalize">
@@ -406,31 +387,76 @@ function dataTable($headers, $data) {
                         </table>
                     </div>
                 </div>
+                
+            </div>
+        </div>';
+}
+
+function errorPage($code,$text,$redirectUrl,$redirectText){
+    echo '
+            <div class="error-content">
+            <h2>'.$code.'</h2>
+            <p>'.$text.'</p>
+            <a href="'.$redirectUrl.'">'.$redirectText.'</a>
+        </div>
+            ';
+}
+
+
+function dataTables($headers, $data) {
+    echo '<div class="data-tables datatable-dark">
+            <div id="dataTable3_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                 <div class="row">
-                    <div class="col-sm-12 col-md-5">
-                        <div class="dataTables_info" id="dataTable3_info" role="status" aria-live="polite">Showing 1 to 10 of 11 entries</div>
-                    </div>
-                    <div class="col-sm-12 col-md-7">
-                        <div class="dataTables_paginate paging_simple_numbers" id="dataTable3_paginate">
-                            <ul class="pagination">
-                                <li class="paginate_button page-item previous disabled" id="dataTable3_previous">
-                                    <a href="#" aria-controls="dataTable3" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-                                </li>
-                                <li class="paginate_button page-item active">
-                                    <a href="#" aria-controls="dataTable3" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                                </li>
-                                <li class="paginate_button page-item ">
-                                    <a href="#" aria-controls="dataTable3" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-                                </li>
-                                <li class="paginate_button page-item next" id="dataTable3_next">
-                                    <a href="#" aria-controls="dataTable3" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="col-sm-12">
+                        <table id="dataTable3" class="text-center dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="dataTable3_info" style="width: 1162px;">
+                            <thead class="text-capitalize">
+                                <tr role="row">';
+    foreach ($headers as $header) {
+        echo '<th class="sorting_asc" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 147px;" aria-sort="ascending" aria-label="' . $header . ': activate to sort column descending">' . $header . '</th>';
+    }
+
+    echo '<th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 104px; display: none;" aria-label="salary: activate to sort column ascending">salary</th></tr>
+                            </thead>
+                            <tbody>';
+
+    $a= is_array($data) && count($data) > 0 && is_array($data[2]);
+
+
+    if ($a) {
+        foreach ($data as $row) {
+            echo '<tr role="row" class="odd">';
+
+            foreach ($row as $value) {
+                echo '<td tabindex="0" class="sorting_1">' . $value . '</td>';
+            }
+
+            echo '<td style="display: none;">$162,700</td></tr>';
+        }
+    } else {
+        echo '<tr role="row" class="odd">';
+        echo '<td colspan="' . count($headers) . '" class="text-center">No data available</td>';
+        echo '<td style="display: none;">$162,700</td>';
+        echo '</tr>';
+    }
+
+    echo '</tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>';
 }
 
-
+function checkInput($data){
+    if(is_array($data)){
+        foreach($data as $item){
+            if(is_array($item)){
+                checkInput($item);
+            }else{
+                return $data;
+            }
+        }
+    }else{
+        return $data;
+    }
+}

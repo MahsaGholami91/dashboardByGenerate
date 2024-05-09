@@ -46,7 +46,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="index.php"><img src="assets/images/icon/logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -56,9 +56,9 @@
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>dashboard</span></a>
                                 <ul class="collapse">
-                                    <li><a href="index.html">ICO dashboard</a></li>
-                                    <li><a href="index2.html">Ecommerce dashboard</a></li>
-                                    <li><a href="index3.html">SEO dashboard</a></li>
+                                    <li><a href="index.php">ICO dashboard</a></li>
+                                    <li><a href="index2.php">Ecommerce dashboard</a></li>
+                                    <li><a href="index3.php">SEO dashboard</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -66,16 +66,16 @@
                                         Types
                                     </span></a>
                                 <ul class="collapse">
-                                    <li><a href="index.html">Left Sidebar</a></li>
-                                    <li><a href="index3-horizontalmenu.html">Horizontal Sidebar</a></li>
+                                    <li><a href="index.php">Left Sidebar</a></li>
+                                    <li><a href="index3-horizontalmenu.php">Horizontal Sidebar</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-pie-chart"></i><span>Charts</span></a>
                                 <ul class="collapse">
-                                    <li><a href="barchart.html">bar chart</a></li>
-                                    <li><a href="linechart.html">line Chart</a></li>
-                                    <li><a href="piechart.html">pie chart</a></li>
+                                    <li><a href="barchart.php">bar chart</a></li>
+                                    <li><a href="linechart.php">line Chart</a></li>
+                                    <li><a href="piechart.php">pie chart</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -83,12 +83,12 @@
                                 <ul class="collapse">
                                     <li><a href="accordion.php">Accordion</a></li>
                                     <li><a href="alert.php">Alert</a></li>
-                                    <li><a href="badge.html">Badge</a></li>
+                                    <li><a href="badge.php">Badge</a></li>
                                     <li><a href="button.php">Button</a></li>
-                                    <li><a href="button-group.html">Button Group</a></li>
+                                    <li><a href="button-group.php">Button Group</a></li>
                                     <li><a href="cards.php">Cards</a></li>
-                                    <li><a href="dropdown.html">Dropdown</a></li>
-                                    <li><a href="list-group.html">List Group</a></li>
+                                    <li><a href="dropdown.php">Dropdown</a></li>
+                                    <li><a href="list-group.php">List Group</a></li>
                                     <li><a href="media-object.php">Media Object</a></li>
                                     <li><a href="modal.php">Modal</a></li>
                                     <li><a href="pagination.php">Pagination</a></li>
@@ -97,14 +97,14 @@
                                     <li><a href="tab.php">Tab</a></li>
                                     <li><a href="typography.php">Typography</a></li>
                                     <li><a href="form.php">Form</a></li>
-                                    <li><a href="grid.html">grid system</a></li>
+                                    <li><a href="grid.php">grid system</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-slice"></i><span>icons</span></a>
                                 <ul class="collapse">
-                                    <li><a href="fontawesome.html">fontawesome icons</a></li>
-                                    <li><a href="themify.html">themify icons</a></li>
+                                    <li><a href="fontawesome.php">fontawesome icons</a></li>
+                                    <li><a href="themify.php">themify icons</a></li>
                                 </ul>
                             </li>
                             <li class="active">
@@ -116,31 +116,31 @@
                                     <li class="active"><a href="datatable.php">datatable</a></li>
                                 </ul>
                             </li>
-                            <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
-                            <li><a href="invoice.html"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
+                            <li><a href="maps.php"><i class="ti-map-alt"></i> <span>maps</span></a></li>
+                            <li><a href="invoice.php"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i> <span>Pages</span></a>
                                 <ul class="collapse">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="login2.html">Login 2</a></li>
-                                    <li><a href="login3.html">Login 3</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="register2.html">Register 2</a></li>
-                                    <li><a href="register3.html">Register 3</a></li>
-                                    <li><a href="register4.html">Register 4</a></li>
-                                    <li><a href="screenlock.html">Lock Screen</a></li>
-                                    <li><a href="screenlock2.html">Lock Screen 2</a></li>
-                                    <li><a href="reset-pass.html">reset password</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="login.php">Login</a></li>
+                                    <li><a href="login2.php">Login 2</a></li>
+                                    <li><a href="login3.php">Login 3</a></li>
+                                    <li><a href="register.php">Register</a></li>
+                                    <li><a href="register2.php">Register 2</a></li>
+                                    <li><a href="register3.php">Register 3</a></li>
+                                    <li><a href="register4.php">Register 4</a></li>
+                                    <li><a href="screenlock.php">Lock Screen</a></li>
+                                    <li><a href="screenlock2.php">Lock Screen 2</a></li>
+                                    <li><a href="reset-pass.php">reset password</a></li>
+                                    <li><a href="pricing.php">Pricing</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-exclamation-triangle"></i>
                                     <span>Error</span></a>
                                 <ul class="collapse">
-                                    <li><a href="404.html">Error 404</a></li>
-                                    <li><a href="403.html">Error 403</a></li>
-                                    <li><a href="500.html">Error 500</a></li>
+                                    <li><a href="404.php">Error 404</a></li>
+                                    <li><a href="403.php">Error 403</a></li>
+                                    <li><a href="500.php">Error 500</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -341,7 +341,7 @@
                         <div class="breadcrumbs-area clearfix">
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><span>Datatable</span></li>
                             </ul>
                         </div>
@@ -390,14 +390,32 @@
                                 <?php 
                                     $headers = ['Name', 'Position', 'Office', 'Age', 'Start Date'];
                                     $data = [
-                                        ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
-                                        ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
-                                        ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12'],
-                                        ['Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13'],
-                                        ['Brenden Wagner', 'Software Engineer', 'San Francisco', '28', '2011/06/07'],
-                                        ['Bruno Nash', 'Software Engineer', 'Edinburgh', '21', '2012/03/29'],
-                                        ['Caesar Vance', 'Pre-Sales Support', 'New York', '29', '2011/12/12']
+                                        ['Airi Satou', 'Accountant', ['Tokyo','San Francisco','London'], '33', '2008/11/28'],
+                                        ['Angelica Ramos', 'Chief Executive Officer (CEO)', ['San','Junior','Edinburgh'], '47', '2009/10/09'],
+                                        ['Ashton Cox', 'Junior Technical Author', ['Tokyo','San Francisco','London'], '66', '2009/01/12']
                                     ];
+
+
+                                    // $headers = ['Name', 'Position', 'Office', 'Age', 'Start Date'];
+
+                                    // $data = [
+                                    //     ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
+                                    //     ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
+                                    //     ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12'],
+                                    //     ['Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13'],
+                                    //     ['Brenden Wagner', 'Software Engineer', 'San Francisco', '28', '2011/06/07'],
+                                    //     ['Bruno Nash', 'Software Engineer', 'Edinburgh', '21', '2012/03/29'],
+                                    //     ['Caesar Vance', 'Pre-Sales Support', 'New York', '29', '2011/12/12'],
+                                    //     ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
+                                    //     ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
+                                    //     ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12'],
+                                    //     ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
+                                    //     ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
+                                    //     ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12'],
+                                    //     ['Airi Satou', 'Accountant', 'Tokyo', '33', '2008/11/28'],
+                                    //     ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '47', '2009/10/09'],
+                                    //     ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '66', '2009/01/12']
+                                    // ];
 
                                     dataTable($headers, $data);
                                 

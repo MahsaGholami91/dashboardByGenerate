@@ -88,19 +88,19 @@ $('#jstree1').jstree({
                             'text': 'html',
                             'children': [
                                 {
-                                    'text': 'layout.html', 'icon': 'none'
+                                    'text': 'layout.php', 'icon': 'none'
                                 },
                                 {
-                                    'text': 'navigation.html', 'icon': 'none'
+                                    'text': 'navigation.php', 'icon': 'none'
                                 },
                                 {
-                                    'text': 'navbar.html', 'icon': 'none'
+                                    'text': 'navbar.php', 'icon': 'none'
                                 },
                                 {
-                                    'text': 'footer.html', 'icon': 'none'
+                                    'text': 'footer.php', 'icon': 'none'
                                 },
                                 {
-                                    'text': 'sidebar.html', 'icon': 'none'
+                                    'text': 'sidebar.php', 'icon': 'none'
                                 }
                             ],
                             'state': {

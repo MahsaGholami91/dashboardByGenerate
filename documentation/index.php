@@ -532,68 +532,68 @@
                                                         <li class="text-navy" data-jstree='"type":"js"}'>xediable-active.js</li>
                                                     </ul>
                                                 </li>
-                                                <li data-jstree='"type":"html"}'> index.html</li>
-                                                <li data-jstree='"type":"html"}'> index-1.html</li>
-                                                <li data-jstree='"type":"html"}'> index-2.html</li>
-                                                <li data-jstree='"type":"html"}'> add-course.html</li>
-                                                <li data-jstree='"type":"html"}'> add-department.html</li>
-                                                <li data-jstree='"type":"html"}'> add-library-assets.html</li>
-                                                <li data-jstree='"type":"html"}'> add-professor.html</li>
-                                                <li data-jstree='"type":"html"}'> add-student.html</li>
-                                                <li data-jstree='"type":"html"}'> all-courses.html</li>
-                                                <li data-jstree='"type":"html"}'> all-professors.html</li>
-                                                <li data-jstree='"type":"html"}'> all-students.html</li>
-                                                <li data-jstree='"type":"html"}'> course-info.html</li>
-                                                <li data-jstree='"type":"html"}'> departments.html</li>
-                                                <li data-jstree='"type":"html"}'> edit-course.html</li>
-                                                <li data-jstree='"type":"html"}'> edit-department.html</li>
-                                                <li data-jstree='"type":"html"}'> edit-library-assets.html</li>
-                                                <li data-jstree='"type":"html"}'> edit-professor.html</li>
-                                                <li data-jstree='"type":"html"}'> edit-student.html</li>
-                                                <li data-jstree='"type":"html"}'> events.html</li>
-                                                <li data-jstree='"type":"html"}'> library-assets.html</li>
-                                                <li data-jstree='"type":"html"}'> professor-profile.html</li>
-                                                <li data-jstree='"type":"html"}'> student-profile.html</li>
-                                                <li data-jstree='"type":"html"}'> 404.html</li>
-                                                <li data-jstree='"type":"html"}'> 500.html</li>
+                                                <li data-jstree='"type":"html"}'> index.php</li>
+                                                <li data-jstree='"type":"html"}'> index-1.php</li>
+                                                <li data-jstree='"type":"html"}'> index-2.php</li>
+                                                <li data-jstree='"type":"html"}'> add-course.php</li>
+                                                <li data-jstree='"type":"html"}'> add-department.php</li>
+                                                <li data-jstree='"type":"html"}'> add-library-assets.php</li>
+                                                <li data-jstree='"type":"html"}'> add-professor.php</li>
+                                                <li data-jstree='"type":"html"}'> add-student.php</li>
+                                                <li data-jstree='"type":"html"}'> all-courses.php</li>
+                                                <li data-jstree='"type":"html"}'> all-professors.php</li>
+                                                <li data-jstree='"type":"html"}'> all-students.php</li>
+                                                <li data-jstree='"type":"html"}'> course-info.php</li>
+                                                <li data-jstree='"type":"html"}'> departments.php</li>
+                                                <li data-jstree='"type":"html"}'> edit-course.php</li>
+                                                <li data-jstree='"type":"html"}'> edit-department.php</li>
+                                                <li data-jstree='"type":"html"}'> edit-library-assets.php</li>
+                                                <li data-jstree='"type":"html"}'> edit-professor.php</li>
+                                                <li data-jstree='"type":"html"}'> edit-student.php</li>
+                                                <li data-jstree='"type":"html"}'> events.php</li>
+                                                <li data-jstree='"type":"html"}'> library-assets.php</li>
+                                                <li data-jstree='"type":"html"}'> professor-profile.php</li>
+                                                <li data-jstree='"type":"html"}'> student-profile.php</li>
+                                                <li data-jstree='"type":"html"}'> 404.php</li>
+                                                <li data-jstree='"type":"html"}'> 500.php</li>
                                                 <li data-jstree='"type":"html"}'> accordion.php</li>
-                                                <li data-jstree='"type":"html"}'> advance-form-element.html</li>
-                                                <li data-jstree='"type":"html"}'> alerts.html</li>
-                                                <li data-jstree='"type":"html"}'> analytics.html</li>
-                                                <li data-jstree='"type":"html"}'> area-charts.html</li>
-                                                <li data-jstree='"type":"html"}'> bar-charts.html</li>
-                                                <li data-jstree='"type":"html"}'> basic-form-element.html</li>
-                                                <li data-jstree='"type":"html"}'> buttons.html</li>
-                                                <li data-jstree='"type":"html"}'> c3.html</li>
-                                                <li data-jstree='"type":"html"}'> code-editor.html</li>
-                                                <li data-jstree='"type":"html"}'> contacts.html</li>
-                                                <li data-jstree='"type":"html"}'> data-maps.html</li>
-                                                <li data-jstree='"type":"html"}'> data-table.html</li>
-                                                <li data-jstree='"type":"html"}'> dual-list-box.html</li>
-                                                <li data-jstree='"type":"html"}'> google-map.html</li>
-                                                <li data-jstree='"type":"html"}'> images-cropper.html</li>
-                                                <li data-jstree='"type":"html"}'> line-charts.html</li>
-                                                <li data-jstree='"type":"html"}'> lock.html</li>
-                                                <li data-jstree='"type":"html"}'> login.html</li>
-                                                <li data-jstree='"type":"html"}'> mailbox.html</li>
-                                                <li data-jstree='"type":"html"}'> mailbox-compose.html</li>
-                                                <li data-jstree='"type":"html"}'> mailbox-view.html</li>
-                                                <li data-jstree='"type":"html"}'> modals.html</li>
-                                                <li data-jstree='"type":"html"}'> multi-upload.html</li>
-                                                <li data-jstree='"type":"html"}'> notifications.html</li>
-                                                <li data-jstree='"type":"html"}'> password-meter.html</li>
-                                                <li data-jstree='"type":"html"}'> password-recovery.html</li>
-                                                <li data-jstree='"type":"html"}'> pdf-viewer.html</li>
-                                                <li data-jstree='"type":"html"}'> peity.html</li>
-                                                <li data-jstree='"type":"html"}'> preloader.html</li>
-                                                <li data-jstree='"type":"html"}'> register.html</li>
-                                                <li data-jstree='"type":"html"}'> rounded-chart.html</li>
-                                                <li data-jstree='"type":"html"}'> sparkline.html</li>
-                                                <li data-jstree='"type":"html"}'> tabs.html</li>
-                                                <li data-jstree='"type":"html"}'> tinymc.html</li>
-                                                <li data-jstree='"type":"html"}'> tree-view.html</li>
-                                                <li data-jstree='"type":"html"}'> widgets.html</li>
-                                                <li data-jstree='"type":"html"}'> x-editable.html</li>
+                                                <li data-jstree='"type":"html"}'> advance-form-element.php</li>
+                                                <li data-jstree='"type":"html"}'> alerts.php</li>
+                                                <li data-jstree='"type":"html"}'> analytics.php</li>
+                                                <li data-jstree='"type":"html"}'> area-charts.php</li>
+                                                <li data-jstree='"type":"html"}'> bar-charts.php</li>
+                                                <li data-jstree='"type":"html"}'> basic-form-element.php</li>
+                                                <li data-jstree='"type":"html"}'> buttons.php</li>
+                                                <li data-jstree='"type":"html"}'> c3.php</li>
+                                                <li data-jstree='"type":"html"}'> code-editor.php</li>
+                                                <li data-jstree='"type":"html"}'> contacts.php</li>
+                                                <li data-jstree='"type":"html"}'> data-maps.php</li>
+                                                <li data-jstree='"type":"html"}'> data-table.php</li>
+                                                <li data-jstree='"type":"html"}'> dual-list-box.php</li>
+                                                <li data-jstree='"type":"html"}'> google-map.php</li>
+                                                <li data-jstree='"type":"html"}'> images-cropper.php</li>
+                                                <li data-jstree='"type":"html"}'> line-charts.php</li>
+                                                <li data-jstree='"type":"html"}'> lock.php</li>
+                                                <li data-jstree='"type":"html"}'> login.php</li>
+                                                <li data-jstree='"type":"html"}'> mailbox.php</li>
+                                                <li data-jstree='"type":"html"}'> mailbox-compose.php</li>
+                                                <li data-jstree='"type":"html"}'> mailbox-view.php</li>
+                                                <li data-jstree='"type":"html"}'> modals.php</li>
+                                                <li data-jstree='"type":"html"}'> multi-upload.php</li>
+                                                <li data-jstree='"type":"html"}'> notifications.php</li>
+                                                <li data-jstree='"type":"html"}'> password-meter.php</li>
+                                                <li data-jstree='"type":"html"}'> password-recovery.php</li>
+                                                <li data-jstree='"type":"html"}'> pdf-viewer.php</li>
+                                                <li data-jstree='"type":"html"}'> peity.php</li>
+                                                <li data-jstree='"type":"html"}'> preloader.php</li>
+                                                <li data-jstree='"type":"html"}'> register.php</li>
+                                                <li data-jstree='"type":"html"}'> rounded-chart.php</li>
+                                                <li data-jstree='"type":"html"}'> sparkline.php</li>
+                                                <li data-jstree='"type":"html"}'> tabs.php</li>
+                                                <li data-jstree='"type":"html"}'> tinymc.php</li>
+                                                <li data-jstree='"type":"html"}'> tree-view.php</li>
+                                                <li data-jstree='"type":"html"}'> widgets.php</li>
+                                                <li data-jstree='"type":"html"}'> x-editable.php</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -610,7 +610,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="logo">
-                    <a href="dashboard.html">
+                    <a href="dashboard.php">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
@@ -639,7 +639,7 @@
 								<tr>
 									<td>1</td>
 									<td>C3 And D3</td>
-									<td>we are going to show you how to get started with C3 and <a href="http://c3js.org/gettingstarted.html">read more</a></td>
+									<td>we are going to show you how to get started with C3 and <a href="http://c3js.org/gettingstarted.php">read more</a></td>
 								</tr>
 								<tr>
 									<td>2</td>
@@ -654,7 +654,7 @@
 								<tr>
 									<td>4</td>
 									<td>CodeMirror</td>
-									<td>CodeMirror is a versatile text editor implemented in JavaScript for the browser and <a href="http://codemirror.net/index.html">read more</a></td>
+									<td>CodeMirror is a versatile text editor implemented in JavaScript for the browser and <a href="http://codemirror.net/index.php">read more</a></td>
 								</tr>
 								<tr>
 									<td>5</td>
@@ -664,7 +664,7 @@
 								<tr>
 									<td>6</td>
 									<td>counterup</td>
-									<td>COUNTER-UP JQUERY PLUGIN and <a href="http://bfintal.github.io/Counter-Up/demo/demo.html">read more</a></td>
+									<td>COUNTER-UP JQUERY PLUGIN and <a href="http://bfintal.github.io/Counter-Up/demo/demo.php">read more</a></td>
 								</tr>
 								<tr>
 									<td>7</td>
@@ -709,7 +709,7 @@
 								<tr>
 									<td>15</td>
 									<td>RangeSlider</td>
-									<td>Ion.RangeSlider 2.2.0. jQuery-plugin Easy, flexible and responsive range slider with skin support and <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">Read More</a></td>
+									<td>Ion.RangeSlider 2.2.0. jQuery-plugin Easy, flexible and responsive range slider with skin support and <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.php">Read More</a></td>
 								</tr>
 								<tr>
 									<td>16</td>
@@ -729,7 +729,7 @@
 								<tr>
 									<td>19</td>
 									<td>Password Meter</td>
-									<td>jQuery Password Strength Meter for Twitter Bootstrap and <a href="https://cdn.rawgit.com/ablanco/jquery.pwstrength.bootstrap/master/examples/index.html">Read More</a></td>
+									<td>jQuery Password Strength Meter for Twitter Bootstrap and <a href="https://cdn.rawgit.com/ablanco/jquery.pwstrength.bootstrap/master/examples/index.php">Read More</a></td>
 								</tr>
 								<tr>
 									<td>20</td>
@@ -850,16 +850,16 @@
                         <li><a href="http://issues.wenzhixin.net.cn/bootstrap-table/">Data Table</a></li>
                         <li><a href="https://www.jstree.com/">JsTree</a></li>
                         <li><a href="https://darkskyapp.github.io/skycons/">Skycons</a></li>
-                        <li><a href="https://cdn.rawgit.com/ablanco/jquery.pwstrength.bootstrap/master/examples/index.html">Password Meter</a></li>
+                        <li><a href="https://cdn.rawgit.com/ablanco/jquery.pwstrength.bootstrap/master/examples/index.php">Password Meter</a></li>
                         <li><a href="http://malsup.com/jquery/media/">PDF Viewer</a></li>
                         <li><a href="https://www.vincentbroute.fr/mapael/">Mapael</a></li>
                         <li><a href="http://jvectormap.com/">jvectormap</a></li>
-                        <li><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">RangeSlider</a></li>
+                        <li><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.php">RangeSlider</a></li>
                         <li><a href="https://fengyuanchen.github.io/cropper/">Cropper</a></li>
                         <li><a href="http://simplemaps.com/us">Data Map</a></li>
-                        <li><a href="http://codemirror.net/index.html">CodeMirror</a></li>
+                        <li><a href="http://codemirror.net/index.php">CodeMirror</a></li>
                         <li><a href="https://harvesthq.github.io/chosen/">Chosen</a></li>
-                        <li><a href="http://c3js.org/gettingstarted.html">C3 And D3</a></li>
+                        <li><a href="http://c3js.org/gettingstarted.php">C3 And D3</a></li>
                         <li><a href="https://www.malot.fr/bootstrap-datetimepicker/">datetimepicker</a></li>
                         <li><a href="http://github.com/vitalets/x-editable">x-editable</a></li>
                         <li><a href="http://www.dropzonejs.com//">dropzonejs</a></li>
